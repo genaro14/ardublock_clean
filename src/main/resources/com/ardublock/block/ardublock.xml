@@ -11068,6 +11068,180 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		// ---------------Edukit-----------------------------------------------//
+		<BlockGenus name="Led_Prendete" kind="command" color="239 169 074" initlabel="bg.Led_Prendete">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.ledn">
+					<DefaultArg genus-name="number" label="1"/>
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/prenderLed.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Led_Apagate" kind="command" color="239 169 074" initlabel="bg.Led_Apagate">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.ledn">
+					<DefaultArg genus-name="number" label="1"/>
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/apagarLed.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Led_Parpadea" kind="command" color="239 169 074" initlabel="bg.Led_Parpadea">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.ledn">
+					<DefaultArg genus-name="number" label="1"/>
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/parpadearLed.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="BotonEdukit" kind="function" color="239 169 074" initlabel="bg.BotonEdukit">
+		<BlockConnectors>
+			<BlockConnector connector-type="number" connector-kind="socket" label="bc.btn_n">
+					<DefaultArg genus-name="number" label="1"/>
+			</BlockConnector>
+			<BlockConnector connector-type="boolean" connector-kind="plug" position-type="mirror" >
+				<!-- CLUDGE:: This apparently daft line enables 'clone' to work correctly on this BlockGenus -->
+				<DefaultArg genus-name="dummy" label="" />
+			</BlockConnector>
+		</BlockConnectors>
+		<Images>
+			<Image>
+				<FileLocation>com/ardublock/block/it10/botonEdukit.png</FileLocation>
+			</Image>
+		</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Temperatura_Valor" kind="command" color="239 169 074" initlabel="bg.Temperatura_Valor">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/temperatura.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="LDR_Valor" kind="command" color="239 169 074" initlabel="bg.LDR_Valor">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/valorLDR.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="LDR_Edukit" kind="data" color="239 169 074" initlabel="bg.LDR_Edukit">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" />
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/LDRkit.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+
+		<BlockGenus name="Temperatura_Edukit" kind="data" color="239 169 074" initlabel="bg.Temperatura_Edukit">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug" />
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/tempValue.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="WiFi" kind="data" color="239 169 074" initlabel="bg.WiFi">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/redWiFi.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Bluetooth" kind="command" color="239 169 074" initlabel="bg.Bluetooth">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/bluetooth.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Servo_Edukit" kind="command" color="239 169 074" initlabel="bg.Servo_Edukit">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.servo_number">
+					<DefaultArg genus-name="number" label="1" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.servo_angle">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/servo.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="UltrasonicoEdu" kind="data" color="239 169 074" initlabel="bg.UltrasonicoEdu">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="plug"  />
+				<BlockConnector connector-type="number" connector-kind="socket" label="trigger #">
+					<DefaultArg genus-name="number" label="6" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="echo #">
+					<DefaultArg genus-name="number" label="9" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/ultrasonicoedu.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		
+		<BlockGenus name="Grillo" kind="command" color="239 169 074" initlabel="bg.Grillo">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/grillo.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Simon_Dice_Leds" kind="command" color="239 169 074" initlabel="bg.Simon_Dice_Leds">
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/simonDice.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
+		<BlockGenus name="Pausa" kind="command" color="239 169 074" initlabel="bg.Pausa">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.pausa">
+					<DefaultArg genus-name="number" label="1000"/>
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/it10/pausa.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+
 	</BlockGenuses>
 
 <!-- Start of Ardublock Standard UI layout -->
@@ -11723,6 +11897,22 @@
 
 	<BlockDrawerSets>
 		<BlockDrawerSet name="factory" type="stack" location="southwest" window-per-drawer="no" drawer-draggable="no">
+
+			<BlockDrawer button-color="000 000 100" name="bd.IT10_Edukit" type="factory" is-open="yes">
+				<BlockGenusMember>Led_Prendete</BlockGenusMember>
+				<BlockGenusMember>Led_Apagate</BlockGenusMember>
+				<BlockGenusMember>Led_Parpadea</BlockGenusMember>
+				<BlockGenusMember>BotonEdukit</BlockGenusMember>
+				<BlockGenusMember>Temperatura_Valor</BlockGenusMember>
+				<BlockGenusMember>LDR_Valor</BlockGenusMember>
+				<BlockGenusMember>LDR_Edukit</BlockGenusMember>
+				<BlockGenusMember>Temperatura_Edukit</BlockGenusMember>
+				<BlockGenusMember>Bluetooth</BlockGenusMember>
+				<BlockGenusMember>Servo_Edukit</BlockGenusMember>
+				<BlockGenusMember>UltrasonicoEdu</BlockGenusMember>
+				<BlockGenusMember>Grillo</BlockGenusMember>
+				<BlockGenusMember>Pausa</BlockGenusMember>
+			</BlockDrawer>
 
 			<BlockDrawer name="bd.control" type="factory" is-open="yes" button-color="255 255 0">
 				<BlockGenusMember>loop</BlockGenusMember>
